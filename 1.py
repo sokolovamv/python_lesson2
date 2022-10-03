@@ -1,8 +1,7 @@
 # Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
-number = float(input("Введите вещественное число: "))
-str_number = str(number)
+number = input("Введите вещественное число: ")
 total = 0
-for i in str_number:
+for i in number:
     if i.isdigit():
         total += int(i)
 print(total)

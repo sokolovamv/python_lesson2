@@ -1,7 +1,8 @@
 # Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
-number = input("Введите вещественное число: ")
-total = 0
-for i in number:
+numbers = input("Введите вещественное число: ")
+sum_numbers = 0
+for i in numbers:
+    # берем в расчет только цифры
     if i.isdigit():
-        total += int(i)
-print(total)
+        sum_numbers += int(i)
+print(sum_numbers)
